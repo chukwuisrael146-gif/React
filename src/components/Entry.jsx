@@ -7,7 +7,7 @@ export default function Entry() {
             </div>
             <div className="ml-[20px] ">
                 <div className="flex ">
-                    <img className="w-[px] mr-[4px] " src="/src/images/marker.png" alt="map marker icon" />
+                    <img className="w-[10px] mr-[4px] " src="/src/images/marker.png" alt="map marker icon" />
                     <span className="pl-[2px] pr-[10px] ">Japan</span>
                     <a href="https://www.google.com/maps/about/behind-the-scenes/streetview/treks/mount-fuji/" className="underline ">View on google maps</a>
                 </div>

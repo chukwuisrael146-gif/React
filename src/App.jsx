@@ -2,11 +2,16 @@ import Content from "./components/content.jsx"
 import NavBar from "./components/navbar.jsx" 
 import Header from "./components/Header.jsx";
 import Entry from "./components/Entry"
+import Contact from "./components/Contacts.jsx";
 function App() {
   return (
      <>
-     <Header />
-     <Entry />
+     <Contact />
+     <Contact />
+     <Contact />
+     <Contact />
+     {/* <Header />
+     <Entry /> */}
   </>
   )
 }
