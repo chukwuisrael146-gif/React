@@ -4,16 +4,45 @@ import Header from "./components/Header.jsx";
 import Entry from "./components/Entry"
 import Contact from "./components/Contacts.jsx";
 import Joke from "./components/Joke.jsx"
+import profile from "./images/react.svg"
+import jokesData from "./jokesData.js";
+import data from "./data.js"
 function App() {
+  const entryElements = data.map((entry) => {
+    return (
+      <Entry
+      key={entry.id} 
+        {...entry}   //use this {...entry} instead of this entry={entry}
+      />
+    )
+  })
+
   return (
-    <div className="">
-      <Contact
+    <main>
+ <Header />
+ <main>
+  {entryElements}
+ </main>
+    </main>
+  )
+}
+
+
+
+export default App;
+
+
+
+
+
+
+         {/* <Contact className="place-items-start "
         img="src\images\mr-whiskerson.png"
         name="Mr Whiskerson"
         phone="(212) 555-1234 "
         email="mr.whiskaz@catnap.com.meow"
       />
-      <Contact
+      <Contact className="bg-red-500 "
         img="src\images\fluffykins.png"
         name="Fluffykins"
         phone="(212) 555-2345 "
@@ -31,33 +60,14 @@ function App() {
         phone="(0800) CAT KING"
         email="pumpkin@scrimba.com"
       />
-    </div>
-  )
-}
-
-export default App;
-
-
-
+      <Contact 
+        img={profile}
+        name="React"
+        phone="(123) 456-7890"
+        email="reach.ccom"
+      />  */}
 
 
-
-{/* <Header />
-      <main>
-        <Entry 
-          img={{
-            src:"/src/images/100462016.jpeg",
-            alt:"Mount Fuji"
-          }}
-          title="Mount Fuji"
-          country="Japan"
-          maplink="https://www.google.com/maps/about/behind-the-scenes/streetview/treks/mount-fuji/"
-          dates="12 Jan 2021 - 24 Jan 2021"
-          text="Mount fuji is the tallest mountain in Japan, standing at 3,766 meters (12,380 feet).
-                    Mount fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourist"
-
-        />
-      </main> */}
 
 
 

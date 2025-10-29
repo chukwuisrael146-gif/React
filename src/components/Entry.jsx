@@ -2,7 +2,7 @@
 export default function Entry(props) {
     console.log(props)
     return (
-        <article className="journal-entry flex m-[30px] justify-left items-center ml-[50px] ">
+        <article className="journal-entry flex m-[30px] justify-left items-center ml-[50px] mb-[36px] ">
             <div className="w-[150px] h-[250px] overflow-hidden rounded-[5px] shrink-0 ">
                 <img src={props.img.src} className="w-[100%] h-[100%] object-cover " alt={props.img.alt} />
             </div>
